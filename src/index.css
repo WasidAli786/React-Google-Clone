@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.search__tabs {
+  @apply flex space-x-6 capitalize text-base md:text-lg font-normal md:ml-48 mt-6 dark:text-gray-400;
+}
+.search__tabs > li {
+  @apply hover:cursor-pointer hover:text-primary py-2;
+}
+.active__tabs {
+  @apply border-b-primary border-b-2 text-primary;
+}
